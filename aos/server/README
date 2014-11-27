@@ -1,0 +1,2 @@
+g++ mainServer.cpp serversocket.cpp ../library/log/log.cpp
+\ng++ -I/usr/include/mysql -DBIG_JOINS=1  -fno-strict-aliasing  -g mainServer.cpp serversocket.cpp ../library/log/log.cpp ../library/db/dbMysql.cpp -L/usr/lib/x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -ldl

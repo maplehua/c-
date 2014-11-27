@@ -1,0 +1,7 @@
+g++ -o output-file $(mysql_config --cflags) test.c $(mysql_config --libs)
+
+USE WHEN COMPILE THE DB FILE
+
+g++ $(mysql_config --cflags) test.cpp dbMysql.cpp ../log/log.cpp $(mysql_config --libs)
+
+be careful :!!!!! if one column is NULL, executeSQL will occur errors , for now i don't know why
