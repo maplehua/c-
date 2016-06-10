@@ -1,0 +1,3 @@
+pthread is not the linux library
+so use
+g++ 4.cpp -lpthread
